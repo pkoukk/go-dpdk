@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/pkoukk/go-dpdk/eal"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/yerden/go-dpdk/eal"
 )
 
 var (

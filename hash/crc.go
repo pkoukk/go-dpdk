@@ -16,7 +16,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/util"
+	"github.com/pkoukk/go-dpdk/util"
 )
 
 // CrcSetAlg allow or disallow use of SSE4.2 instrinsics for CRC32

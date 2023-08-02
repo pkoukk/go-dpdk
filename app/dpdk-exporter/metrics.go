@@ -10,12 +10,12 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/ethdev"
+	"github.com/pkoukk/go-dpdk/memzone"
+	"github.com/pkoukk/go-dpdk/ring"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/ethdev"
-	"github.com/yerden/go-dpdk/memzone"
-	"github.com/yerden/go-dpdk/ring"
 )
 
 const (

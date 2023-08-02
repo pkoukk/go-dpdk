@@ -11,8 +11,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/ring"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/ring"
 )
 
 // compile time checks

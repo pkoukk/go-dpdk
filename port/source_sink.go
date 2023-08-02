@@ -9,8 +9,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/mempool"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/mempool"
 )
 
 // compile time checks

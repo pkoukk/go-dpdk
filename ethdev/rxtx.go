@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/mbuf"
+	"github.com/pkoukk/go-dpdk/mbuf"
 )
 
 // TxBuffer is a structure used to buffer packets for future TX Used by APIs

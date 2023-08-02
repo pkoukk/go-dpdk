@@ -11,7 +11,7 @@ import (
 	"net"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // LPM6 is an RTE Longest Prefix Match lookup object.
@@ -31,12 +31,13 @@ type Config6 struct {
 // containing the configuration.
 //
 // Returns handle to LPM6 object on success, and errno value:
-//   E_RTE_NO_CONFIG - function could not get pointer to rte_config structure
-//   E_RTE_SECONDARY - function was called from a secondary process instance
-//   EINVAL - invalid parameter passed to function
-//   ENOSPC - the maximum number of memzones has already been allocated
-//   EEXIST - a memzone with the same name already exists
-//   ENOMEM - no appropriate memory area found in which to create memzone
+//
+//	E_RTE_NO_CONFIG - function could not get pointer to rte_config structure
+//	E_RTE_SECONDARY - function was called from a secondary process instance
+//	EINVAL - invalid parameter passed to function
+//	ENOSPC - the maximum number of memzones has already been allocated
+//	EEXIST - a memzone with the same name already exists
+//	ENOMEM - no appropriate memory area found in which to create memzone
 func Create6(name string, socket int, cfg *Config6) (*LPM6, error) {
 	s := C.CString(name)
 	defer C.free(unsafe.Pointer(s))

@@ -3,8 +3,8 @@ package port
 import (
 	"testing"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/eal"
 )
 
 func TestPortEthdevRx(t *testing.T) {

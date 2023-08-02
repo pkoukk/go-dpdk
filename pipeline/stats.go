@@ -8,9 +8,9 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/port"
-	"github.com/yerden/go-dpdk/table"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/port"
+	"github.com/pkoukk/go-dpdk/table"
 )
 
 // PortInStats is the pipeline input port stats.

@@ -10,8 +10,8 @@ import "C"
 import (
 	"runtime"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/ethdev"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/ethdev"
 )
 
 // static test that ItemTypeEnd is 0.

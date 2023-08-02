@@ -1,4 +1,4 @@
-module github.com/yerden/go-dpdk
+module github.com/pkoukk/go-dpdk
 
 go 1.19
 

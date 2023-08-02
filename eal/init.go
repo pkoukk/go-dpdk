@@ -21,7 +21,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 const (
@@ -190,6 +190,7 @@ func panicCatcher(fn func(*LcoreCtx), ctx *LcoreCtx) (err error) {
 }
 
 // to run as lcore_function_t
+//
 //export lcoreFuncListener
 func lcoreFuncListener(arg unsafe.Pointer) C.int {
 	runtime.LockOSThread()

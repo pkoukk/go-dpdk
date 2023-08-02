@@ -1,13 +1,13 @@
 // Package pipeline wraps RTE Pipeline.
 //
 // This tool is part of the DPDK Packet Framework tool suite and
-//provides a standard methodology (logically similar to OpenFlow) for
+// provides a standard methodology (logically similar to OpenFlow) for
 // rapid development of complex packet processing pipelines out of
-//ports, tables and actions.
+// ports, tables and actions.
 //
-//Basic operation. A pipeline is constructed by connecting its input
+// Basic operation. A pipeline is constructed by connecting its input
 // ports to its output ports through a chain of lookup tables. As
-//result of lookup operation into the current table, one of the table
+// result of lookup operation into the current table, one of the table
 // entries (or the default table entry, in case of lookup miss) is
 // identified to provide the actions to be executed on the current
 // packet and the associated action meta-data. The behavior of user
@@ -53,7 +53,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // Params configures the pipeline.

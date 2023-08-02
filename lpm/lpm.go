@@ -16,7 +16,7 @@ import (
 	"net"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // LPM is an RTE Longest Prefix Match lookup object.
@@ -64,12 +64,13 @@ func FindExisting(name string, ptr interface{}) error {
 // containing the configuration.
 //
 // Returns handle to LPM object on success, and errno value:
-//   E_RTE_NO_CONFIG - function could not get pointer to rte_config structure
-//   E_RTE_SECONDARY - function was called from a secondary process instance
-//   EINVAL - invalid parameter passed to function
-//   ENOSPC - the maximum number of memzones has already been allocated
-//   EEXIST - a memzone with the same name already exists
-//   ENOMEM - no appropriate memory area found in which to create memzone
+//
+//	E_RTE_NO_CONFIG - function could not get pointer to rte_config structure
+//	E_RTE_SECONDARY - function was called from a secondary process instance
+//	EINVAL - invalid parameter passed to function
+//	ENOSPC - the maximum number of memzones has already been allocated
+//	EEXIST - a memzone with the same name already exists
+//	ENOMEM - no appropriate memory area found in which to create memzone
 func Create(name string, socket int, cfg *Config) (*LPM, error) {
 	s := C.CString(name)
 	defer C.free(unsafe.Pointer(s))

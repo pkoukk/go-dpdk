@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // Type of the field.

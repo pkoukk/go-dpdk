@@ -8,7 +8,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // StubParams is the empty parameters for Stub table.

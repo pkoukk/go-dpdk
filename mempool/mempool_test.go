@@ -7,11 +7,11 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/mbuf"
+	"github.com/pkoukk/go-dpdk/mbuf"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/mempool"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/mempool"
 )
 
 func assert(t testing.TB, expected bool, args ...interface{}) {

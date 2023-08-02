@@ -4,11 +4,11 @@ import (
 	"strconv"
 	"sync"
 
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/ethdev"
+	"github.com/pkoukk/go-dpdk/mbuf"
+	"github.com/pkoukk/go-dpdk/util"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/ethdev"
-	"github.com/yerden/go-dpdk/mbuf"
-	"github.com/yerden/go-dpdk/util"
 )
 
 type PacketBytes struct {

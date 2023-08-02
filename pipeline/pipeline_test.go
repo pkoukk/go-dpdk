@@ -4,12 +4,12 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/mempool"
-	"github.com/yerden/go-dpdk/port"
-	"github.com/yerden/go-dpdk/ring"
-	"github.com/yerden/go-dpdk/table"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/mempool"
+	"github.com/pkoukk/go-dpdk/port"
+	"github.com/pkoukk/go-dpdk/ring"
+	"github.com/pkoukk/go-dpdk/table"
 )
 
 func TestPortRingRx(t *testing.T) {

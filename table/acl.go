@@ -9,7 +9,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // ACLFieldDef is the ACL Field definition. Each field in the ACL rule

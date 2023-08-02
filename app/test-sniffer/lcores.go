@@ -6,9 +6,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/ethdev"
-	"github.com/yerden/go-dpdk/util"
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/ethdev"
+	"github.com/pkoukk/go-dpdk/util"
 )
 
 var burstSize = flag.Int("burst", 256, "Specify RX burst size")

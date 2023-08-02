@@ -5,9 +5,9 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/lpm"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/lpm"
 )
 
 func mustParseCIDR(s string) net.IPNet {

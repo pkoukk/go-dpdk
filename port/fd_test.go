@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/mempool"
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/mempool"
 )
 
 func TestPortFdRx(t *testing.T) {
@@ -58,10 +58,10 @@ func TestPortFdOut(t *testing.T) {
 
 	err = eal.ExecOnMain(func(*eal.LcoreCtx) {
 		params := &FdTx{
-			Fd:      f.Fd(),
+			Fd:        f.Fd(),
 			BurstSize: 32,
-			NoDrop:  true,
-			Retries: 32,
+			NoDrop:    true,
+			Retries:   32,
 		}
 
 		ops := params.OutOps()

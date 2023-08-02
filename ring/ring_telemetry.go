@@ -7,7 +7,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 func telemetryRegisterCmd(path string, handler C.telemetry_cb, help string) C.int {

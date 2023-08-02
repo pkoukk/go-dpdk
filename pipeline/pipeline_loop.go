@@ -18,14 +18,15 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/yerden/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/common"
 )
 
 // OpsCtrlF returns 0 if the pipeline continues, >0 if the pipeline
 // should be stopped and <0 in case of error.
 //
 // The implementation should satisfy the signature:
-//   int (*pipeline_op_ctrl)(void *params, struct rte_pipeline *p);
+//
+//	int (*pipeline_op_ctrl)(void *params, struct rte_pipeline *p);
 type OpsCtrlF C.pipeline_op_ctrl
 
 // Ops is the control operations of a pipeline tight loop.
