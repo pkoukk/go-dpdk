@@ -4,10 +4,10 @@ import (
 	"crypto/rand"
 	"testing"
 
+	"github.com/pkoukk/go-dpdk/common"
+	"github.com/pkoukk/go-dpdk/eal"
+	"github.com/pkoukk/go-dpdk/mempool"
 	"github.com/stretchr/testify/assert"
-	"github.com/yerden/go-dpdk/common"
-	"github.com/yerden/go-dpdk/eal"
-	"github.com/yerden/go-dpdk/mempool"
 )
 
 func getSample(n int) []byte {

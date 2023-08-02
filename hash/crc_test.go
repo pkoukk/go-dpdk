@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yerden/go-dpdk/util"
+	"github.com/pkoukk/go-dpdk/util"
 )
 
 func makeGoHash32Func() func([]byte, uint32) uint32 {

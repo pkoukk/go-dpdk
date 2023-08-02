@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"sync"
 	"testing"
+
 	// "time"
 
 	"golang.org/x/sys/unix"
 
-	"github.com/yerden/go-dpdk/lcore"
+	"github.com/pkoukk/go-dpdk/lcore"
 )
 
 func TestNewThread(t *testing.T) {
